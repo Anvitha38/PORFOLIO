@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background: #d35400;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin:0;
+            font-size: 2.5em;
+        }
+
+        .menu-section {
+            max-width: 900px;
+            margin:40px auto;
+            padding:20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #d35400;
+            display:inline-block;
+            margin-bottom: 20px;
+            color:#d35400;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:20px;
+        }
+
+        .item {
+            background: white;
+            padding:15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .item:hover {
+            transform:scale(1.03);
+        }
+
+        .item h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .price {
+            color:#d35400;
+            font-weight: bold;
+            float:right;
+        }
+
+        footer {
+            text-align: center;
+            background: #d35400;
+            color: white;
+            padding:15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍴 Delicious Bites</h1>
+        <p>Fresh.Tasty.Homemade</p>
+    </header>
+
+    <section class="menu-section">
+        <h2>Starters</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>Tomato Soup <span class="price">$5</span></h3>
+                <p>Rich and creamy tomato soup served with croutons.</p>
+            </div>
+            <div class="item">
+                <h3>spring Rolls<span class="price">$7</span></h3>
+                <p>crispy rolls stuffed with fresh vegetables.</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <h3>Grilled Chicken<span class="price">$12</span></h3>
+                    <p>juicy chicken breast grilled with herbs and spices.</p>
+                </div>
+                <div class="item">
+                    <h3>Veggie pasta<span class="price">$10</span></h3>
+                    <p>Penne pasta tossed with fresh vegetables and tomato sauce.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div vlass="items">
+                    <h3>Chocolate Cake<span class="price">$6</span></h3>
+                    <p>Moist chocolate cake topped with fudge icing.</p>
+                </div>
+                <div class="item">
+                    <h3>Ice Cream Sundae<span class="price">$6</span></h3>
+                    <p>Vanilla ice cream with chocolate syrup and nuts.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>©2025Delicious Bites.All Rights Reserved</p>
+        </footer>
+</body>
+</html>
